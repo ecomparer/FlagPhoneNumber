@@ -19,11 +19,11 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 
 	override open func viewDidLoad() {
 		super.viewDidLoad()
-		 let attrs = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont(name: "Poppins-SemiBold", size: 20)!]
+		let attrs = [NSAttributedString.Key.foregroundColor: UIColor.init(red: 240/255, green: 81/255, blue: 105/255, alpha: 1), NSAttributedString.Key.font: UIFont(name: "Poppins-SemiBold", size: 20)!]
 		tableView.tableFooterView = UIView()
 		tableView.separatorColor = UIColor.init(red: 240/255, green: 81/255, blue: 105/255, alpha: 1)
         	tableView.separatorInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
-		self.navigationController?.navigationBar.barTintColor = .init(red: 240/255, green: 81/255, blue: 105/255, alpha: 1)
+		self.navigationController?.navigationBar.titleTextAttributes = attrs
         	self.navigationController?.navigationBar.isTranslucent = false
 		initSearchBarController()
 	}
