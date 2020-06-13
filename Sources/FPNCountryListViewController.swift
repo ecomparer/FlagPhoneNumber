@@ -21,6 +21,9 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 		super.viewDidLoad()
 
 		tableView.tableFooterView = UIView()
+		tableView.tableHeaderView?.backgroundColor = .init(red: 247/255, green: 57/255, blue: 90/255, alpha: 0.8)
+		tableView.separatorColor = UIColor.init(red: 240/255, green: 81/255, blue: 105/255, alpha: 1)
+        	tableView.separatorInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
 
 		initSearchBarController()
 	}
@@ -85,6 +88,8 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 
 		if showCountryPhoneCode {
 			cell.detailTextLabel?.text = country.phoneCode
+			cell.detailTextLabel?.textColor = .gray
+			cell.detailTextLabel?.font = UIFont(name: "Poppins-SemiBold", size: 15)
 		}
 
 		return cell
