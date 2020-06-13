@@ -30,8 +30,8 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
         	self.navigationController?.navigationBar.isTranslucent = false
 		initSearchBarController()
 	}
-	override open func viewDidAppear(){
-		super.viewDidLoad()
+	override open func viewDidAppear(_ animated: Bool){
+		super.viewWillAppear(animated)
 		let attrs = [NSAttributedString.Key.foregroundColor: UIColor.init(red: 240/255, green: 81/255, blue: 105/255, alpha: 1), NSAttributedString.Key.font: UIFont(name: "Poppins-SemiBold", size: 20)!]
 		self.navigationController?.navigationBar.titleTextAttributes = attrs
 	}
