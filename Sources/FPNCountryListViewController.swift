@@ -24,6 +24,7 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 		tableView.tableHeaderView?.backgroundColor = .init(red: 247/255, green: 57/255, blue: 90/255, alpha: 0.8)
 		tableView.separatorColor = UIColor.init(red: 240/255, green: 81/255, blue: 105/255, alpha: 1)
         	tableView.separatorInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+		searchController.view.backgroundColor = .init(red: 247/255, green: 57/255, blue: 90/255, alpha: 0.8)
 
 		initSearchBarController()
 	}
