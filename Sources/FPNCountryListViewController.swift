@@ -80,6 +80,8 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 
 		cell.imageView?.image = country.flag
 		cell.textLabel?.text = country.name
+		cell.textLabel?.textColor = .init(red: 16/255, green: 32/255, blue: 90/255, alpha: 1)
+        	cell.textLabel?.font = UIFont(name: "Poppins-SemiBold", size: 20)
 
 		if showCountryPhoneCode {
 			cell.detailTextLabel?.text = country.phoneCode
