@@ -32,6 +32,7 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 		self.navigationController?.navigationBar.titleTextAttributes = attrs
         	self.navigationController?.navigationBar.isTranslucent = false
 		self.navigationController?.navigationBar.barTintColor = .white
+		self.navigationController?.navigationBar.tintColor = .white
 		initSearchBarController()
 	}
 	override open func viewDidAppear(_ animated: Bool){
@@ -39,6 +40,7 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 		let attrs = [NSAttributedString.Key.foregroundColor: UIColor.init(red: 240/255, green: 81/255, blue: 105/255, alpha: 1), NSAttributedString.Key.font: UIFont(name: "Poppins-SemiBold", size: 20)!]
 		self.navigationController?.navigationBar.titleTextAttributes = attrs
 		self.navigationController?.navigationBar.barTintColor = .white
+		self.navigationController?.navigationBar.tintColor = .white
 	}
 
 	open func setup(repository: FPNCountryRepository) {
@@ -70,6 +72,7 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 			tableView.tableHeaderView = searchController.searchBar
 			tableView.backgroundColor = .white
 			self.navigationController?.navigationBar.barTintColor = .white
+			self.navigationController?.navigationBar.tintColor = .white
 		}
 		definesPresentationContext = true
 	}
