@@ -32,6 +32,9 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 		self.navigationController?.navigationBar.titleTextAttributes = attrs
         	self.navigationController?.navigationBar.isTranslucent = false
 		self.navigationController?.navigationBar.barTintColor = .white
+		if #available(iOS 13.0, *) {
+            		overrideUserInterfaceStyle = .light
+        	}
 		initSearchBarController()
 	}
 	
