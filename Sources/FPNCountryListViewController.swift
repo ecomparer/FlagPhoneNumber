@@ -31,6 +31,7 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
         	tableView.separatorInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
 		self.navigationController?.navigationBar.titleTextAttributes = attrs
         	self.navigationController?.navigationBar.isTranslucent = false
+		self.navigationController?.navigationBar.barTintColor = .white
 		initSearchBarController()
 	}
 	override open func viewDidAppear(_ animated: Bool){
