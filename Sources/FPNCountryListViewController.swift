@@ -80,6 +80,7 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 			tableView.backgroundColor = .white
 			tableView.tableHeaderView?.backgroundColor
 			self.navigationController?.navigationBar.barTintColor = .white
+			tableView.backgroundView?.backgroundColor = .white
 		}
 		definesPresentationContext = true
 	}
