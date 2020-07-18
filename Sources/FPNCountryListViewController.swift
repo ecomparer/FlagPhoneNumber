@@ -62,6 +62,7 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 			searchController.definesPresentationContext = true
 
 			//				searchController.searchBar.sizeToFit()
+			searchController.searchBar.backgroundColor = .white
 			tableView.tableHeaderView = searchController.searchBar
 		}
 		definesPresentationContext = true
