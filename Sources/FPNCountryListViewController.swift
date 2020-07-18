@@ -38,6 +38,7 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 		super.viewWillAppear(animated)
 		let attrs = [NSAttributedString.Key.foregroundColor: UIColor.init(red: 240/255, green: 81/255, blue: 105/255, alpha: 1), NSAttributedString.Key.font: UIFont(name: "Poppins-SemiBold", size: 20)!]
 		self.navigationController?.navigationBar.titleTextAttributes = attrs
+		self.navigationController?.navigationBar.barTintColor = .white
 	}
 
 	open func setup(repository: FPNCountryRepository) {
@@ -68,6 +69,7 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 			searchController.searchBar.backgroundColor = .white
 			tableView.tableHeaderView = searchController.searchBar
 			tableView.backgroundColor = .white
+			self.navigationController?.navigationBar.barTintColor = .white
 		}
 		definesPresentationContext = true
 	}
