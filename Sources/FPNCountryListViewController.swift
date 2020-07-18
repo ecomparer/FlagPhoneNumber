@@ -32,9 +32,7 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 		self.navigationController?.navigationBar.titleTextAttributes = attrs
         	self.navigationController?.navigationBar.isTranslucent = false
 		self.navigationController?.navigationBar.barTintColor = .white
-		if #available(iOS 13.0, *) {
-            		overrideUserInterfaceStyle = .light
-        	}
+		tableView.backgroundView?.backgroundColor = .white
 		initSearchBarController()
 	}
 	
@@ -75,7 +73,7 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 			searchController.definesPresentationContext = true
 
 			//				searchController.searchBar.sizeToFit()
-			searchController.searchBar.tintColor = .white
+			//searchController.searchBar.tintColor = .white
             		searchController.searchBar.barTintColor = .white
 			searchController.searchBar.backgroundColor = .white
 			tableView.tableHeaderView = searchController.searchBar
