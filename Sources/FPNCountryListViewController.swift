@@ -21,9 +21,12 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 		super.viewDidLoad()
 		let attrs = [NSAttributedString.Key.foregroundColor: UIColor.init(red: 240/255, green: 81/255, blue: 105/255, alpha: 1), NSAttributedString.Key.font: UIFont(name: "Poppins-SemiBold", size: 20)!]
 		tableView.tableFooterView = UIView()
+		tableView.tableFooterView.backgroundColor = .white
 		var frame = CGRect.zero
 		frame.size.height = .leastNormalMagnitude
 		tableView.tableHeaderView = UIView(frame: frame)
+		tableView.tableHeaderView.backgroundColor = .white
+		tableView.backgroundColor = .white
 		tableView.separatorColor = UIColor.init(red: 240/255, green: 81/255, blue: 105/255, alpha: 1)
         	tableView.separatorInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
 		self.navigationController?.navigationBar.titleTextAttributes = attrs
@@ -93,6 +96,8 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 		cell.textLabel?.text = country.name
 		cell.textLabel?.textColor = .init(red: 16/255, green: 32/255, blue: 90/255, alpha: 1)
         	cell.textLabel?.font = UIFont(name: "Poppins-SemiBold", size: 20)
+		cell.backgroundColor = .white
+		cell.contentView.backgroundColor = .clear
 
 		if showCountryPhoneCode {
 			cell.detailTextLabel?.text = country.phoneCode
